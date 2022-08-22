@@ -8,7 +8,7 @@ class HornedBeast extends React.Component {
     <div>
       <h2>{this.props.title}</h2>
       <p>{this.props.disc}</p>
-      <img src={this.props.img} alt='image'></img>
+      <img src={this.props.img} alt='image' title={this.props.title}></img>
       <style jsx >
         {`
           img {
