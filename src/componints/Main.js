@@ -9,7 +9,7 @@ class Main extends React.Component {
     return(
 
       
-    <div style={{ display:'flex' , alignContent:'center'  }}>
+    <div style={{ float:'left'  }}>
 
         {Data.map(user => (
           

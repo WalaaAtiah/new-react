@@ -3,10 +3,26 @@ import React from 'react';
 
 
 class Header extends React.Component {
+
+  constructor(props) {
+    super(props); 
+    this.state = {
+        change : ""
+    }
+}
+
+changeelement = () => {
+    this.setState({
+      change : this.state.change + "🦄🐋🐏"
+      
+    })
+}
+
+
   render(){
     return(
     <div>
-      <h1>🦄🦄 Unicorn React APP </h1>
+      <h1 onMouseOver={this.changeelement}> {this.state.change} Animal APP 🐐🐑🐕</h1>
       <style jsx >
         {`
           h1 {
