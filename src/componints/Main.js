@@ -13,7 +13,7 @@ class Main extends React.Component {
 
         {Data.map(user => (
           
-          <><HornedBeast id={user._id} title={user.title} img={user.image_url} disc={user.description} keyword={user.keyword} horns={user.horns} /><li> hi</li></>
+          <><HornedBeast id={user._id} title={user.title} img={user.image_url} disc={user.description} keyword={user.keyword} horns={user.horns} /></>
       ))}
 
           
