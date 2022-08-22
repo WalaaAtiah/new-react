@@ -2,11 +2,12 @@ import React from 'react';
 import Header from './componints/Header';
 import Footer from './componints/Footer';
 import Main from './componints/Main';
-
+// import Data from './componints/Data.json';
 class App extends React.Component {
+
   render(){
     return(
-    <div>
+    <div >
     <Header />
     <Main />
     <Footer />
