@@ -13,7 +13,7 @@ class Header extends React.Component {
 
 changeelement = () => {
     this.setState({
-      change : this.state.change + "🦄🐋🐏"
+      change : "🦄🐋🐏"
       
     })
 }
