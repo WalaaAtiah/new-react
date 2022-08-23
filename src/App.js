@@ -2,14 +2,16 @@ import React from 'react';
 import Header from './componints/Header';
 import Footer from './componints/Footer';
 import Main from './componints/Main';
-// import Data from './componints/Data.json';
+import Data from './componints/Data.json'
+
+
 class App extends React.Component {
 
   render(){
     return(
-    <div style={{  }}>
+    <div style={{backgroundColor:"rgb(178, 235, 235)"  }}>
     <Header />
-    <Main />
+    <Main  Data={Data}/>
     <Footer />
 
     </div>

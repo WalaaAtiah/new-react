@@ -1,5 +1,5 @@
 # Time Estimate
-
+# class 02
 
 ## Feature #1: Display images 
 
@@ -41,3 +41,27 @@ Start time: 1:00pm
 Finish time: 7:00 pm
 
 Actual time needed to complete: did in the same time with #1: Display images
+
+# class 03
+
+## Feature #1: Display a Modal
+
+
+Number and name of feature: #1: Display a Modal
+
+Estimate of time needed to complete: 5hours
+
+Start time: 5.00pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+<br>
+
+
+
+
+
+
+
