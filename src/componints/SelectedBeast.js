@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Modal } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 class SelectedBeast extends React.Component {
