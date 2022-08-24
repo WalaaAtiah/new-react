@@ -26,6 +26,7 @@ class Main extends React.Component {
             keyword={user.keyword}
             horns={user.horns}
             Module={this.props.Module}
+            
           />
         ))}
       </Row>

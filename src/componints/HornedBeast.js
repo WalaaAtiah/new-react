@@ -17,11 +17,11 @@ class HornedBeast extends React.Component {
       numOfloves: this.state.numOfloves + "💕",
     });
   };
-  cardtital=()=>{
-    // this.setState({
-    //   cardName:this.props.title,
-    // });
-    this.props.Module()
+  cardClick=()=>{
+    
+    this.props.Module(this.props.title);
+  
+
 
   }
 
@@ -32,7 +32,7 @@ class HornedBeast extends React.Component {
     return (
       <div>
         <Col>
-          <Card onClick={this.cardtital} style={{ width: "25rem", textAlign: "center", borderBlockStyle: "solid", borderWidth: "5px", height: "50rem", margin: "30px", borderRadius: "20px", backgroundColor: "#FFB4B4", }}>
+          <Card onClick={this.cardClick} style={{ width: "25rem", textAlign: "center", borderBlockStyle: "solid", borderWidth: "5px", height: "50rem", margin: "30px", borderRadius: "20px", backgroundColor: "#FFB4B4", }}>
             <Card.Title style={{ color: "black", fontSize: "1.5rem", fontweight: "bold" }} >
               {this.props.id}
             </Card.Title>

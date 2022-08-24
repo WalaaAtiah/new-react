@@ -11,12 +11,25 @@ class App extends React.Component {
     super(props);
     this.state = {
       newModule: "",
+      setshow:false,
+      selBeast :{}
+      
     };
   }
 
-  Module = () => {
+  Module = (name) => {
+    
     this.setState({
       newModule: this.state.newModule + "💕",
+      setshow:true,
+      selBeast:Data.find(item=>item.title===name)
+
+    });
+  };
+  handleClose = () => {
+    this.setState({
+      setshow: false,
+      
     });
   };
   
@@ -30,8 +43,9 @@ class App extends React.Component {
 
 
     <Header />
-    <Main  Data={Data} Module={this.Module}/>
+    <Main  Data={Data} Module={this.Module} />
     <Footer />
+    <SelestedBeast setshow={this.state.setshow} handleClose={this.handleClose} selBeast={this.state.selBeast}/>
 
     </div>
     )
