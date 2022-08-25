@@ -5,7 +5,9 @@ import Row from "react-bootstrap/Row";
 
 class Main extends React.Component {
 
-
+  hi = () => {
+    console.log("hi",this.props.Data)
+  };
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -17,6 +19,7 @@ class Main extends React.Component {
   render() {
     return (
       <Row xs={1} md={3} className="g-4">
+        {this.hi()}
         {this.props.Data.map((user) => (
           <HornedBeast
             id={user._id}
@@ -26,7 +29,7 @@ class Main extends React.Component {
             keyword={user.keyword}
             horns={user.horns}
             Module={this.props.Module}
-            
+            key={user._id}
           />
         ))}
       </Row>
